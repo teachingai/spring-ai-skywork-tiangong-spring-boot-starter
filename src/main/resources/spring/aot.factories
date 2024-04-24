@@ -1,0 +1,2 @@
+org.springframework.aot.hint.RuntimeHintsRegistrar=\
+	aot.org.springframework.ai.skywork.tiangong.SensetimeAiSensenovaRuntimeHints
