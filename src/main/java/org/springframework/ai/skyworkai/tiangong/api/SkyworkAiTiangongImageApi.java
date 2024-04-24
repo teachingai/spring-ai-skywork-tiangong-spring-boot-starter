@@ -18,7 +18,7 @@ public class SkyworkAiTiangongImageApi {
     private final RestClient restClient;
 
     /**
-     * Create a new Skywork AI Tiangong Image api with base URL set to https://api.moonshot.cn
+     * Create a new Skywork AI Tiangong Image api with base URL set to https://www.tiangong.cn/
      * @param apiKey Skywork AI Tiangong apiKey.
      */
     public SkyworkAiTiangongImageApi(String apiKey) {

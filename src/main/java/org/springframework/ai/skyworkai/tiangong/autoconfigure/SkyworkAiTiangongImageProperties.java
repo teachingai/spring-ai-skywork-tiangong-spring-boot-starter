@@ -2,12 +2,13 @@ package org.springframework.ai.skyworkai.tiangong.autoconfigure;
 
 import org.springframework.ai.skyworkai.tiangong.api.SkyworkAiTiangongApi;
 import org.springframework.ai.skyworkai.tiangong.api.SkyworkAiTiangongChatOptions;
+import org.springframework.ai.skyworkai.tiangong.api.SkyworkAiTiangongImageOptions;
 import org.springframework.ai.skyworkai.tiangong.util.ApiUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
-@ConfigurationProperties(SkyworkAiTiangongChatProperties.CONFIG_PREFIX)
-public class SkyworkAiTiangongChatProperties extends SkyworkAiParentProperties {
+@ConfigurationProperties(SkyworkAiTiangongImageProperties.CONFIG_PREFIX)
+public class SkyworkAiTiangongImageProperties extends SkyworkAiParentProperties {
 
     public static final String CONFIG_PREFIX = "spring.ai.sensetimeai.sensenova.chat";
 
@@ -23,19 +24,14 @@ public class SkyworkAiTiangongChatProperties extends SkyworkAiParentProperties {
      * generative's defaults.
      */
     @NestedConfigurationProperty
-    private SkyworkAiTiangongChatOptions options = SkyworkAiTiangongChatOptions.builder()
-            .withModel(SkyworkAiTiangongApi.ChatModel.SENSECHAT.getValue())
-            .withMaxToken(ApiUtils.DEFAULT_MAX_TOKENS)
-            .withDoSample(Boolean.TRUE)
-            .withTemperature(ApiUtils.DEFAULT_TEMPERATURE)
-            .withTopP(ApiUtils.DEFAULT_TOP_P)
+    private SkyworkAiTiangongImageOptions options = SkyworkAiTiangongImageOptions.builder()
             .build();
 
-    public SkyworkAiTiangongChatOptions getOptions() {
+    public SkyworkAiTiangongImageOptions getOptions() {
         return this.options;
     }
 
-    public void setOptions(SkyworkAiTiangongChatOptions options) {
+    public void setOptions(SkyworkAiTiangongImageOptions options) {
         this.options = options;
     }
 
