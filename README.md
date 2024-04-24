@@ -23,7 +23,7 @@
 
 #### 模型
 
-昆仑万维天工开放平台提供了包括通用大模型、图像大模型。
+昆仑万维天工开放平台提供了包括通用大模型、图像大模型、盘古多模态大模型、。
 
 | 模型 |  描述 |
 | ------------ | ------------ |
@@ -34,7 +34,7 @@
 
 ``` xml
 <dependency>
-	<groupId>cn.teachingai</groupId>
+	<groupId>com.github.teachingai</groupId>
 	<artifactId>spring-ai-skywork-tiangong-spring-boot-starter</artifactId>
 	<version>${project.version}</version>
 </dependency>
@@ -42,4 +42,5 @@
 
 ### Sample
 
+使用示例请参见 [Spring AI Examples](https://github.com/TeachingAI/spring-ai-examples)
 

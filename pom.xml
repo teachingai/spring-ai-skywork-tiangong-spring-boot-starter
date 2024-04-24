@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.hiwepy</groupId>
+	<groupId>com.github.teachingai</groupId>
 	<artifactId>spring-ai-skywork-tiangong-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Spring AI Implementation Base On 昆仑万维 - 天工大模型</description>
 	<version>1.0.0-SNAPSHOT</version>
