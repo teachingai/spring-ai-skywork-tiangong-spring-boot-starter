@@ -88,7 +88,7 @@ public class SkyworkAiTiangongAutoConfiguration {
                                                                      SkyworkAiTiangongImageApi skyworkAiTiangongImageApi,
                                                                      ObjectProvider<RetryTemplate> retryTemplateProvider) {
 
-        String baseUrl = StringUtils.hasText(embeddingProperties.getBaseUrl()) ? embeddingProperties.getBaseUrl() : connectionProperties.getBaseUrl();
+        String baseUrl = StringUtils.hasText(imageProperties.getBaseUrl()) ? imageProperties.getBaseUrl() : connectionProperties.getBaseUrl();
         Assert.hasText(baseUrl, "Huawei AI Pangu base URL must be set");
 
         RetryTemplate retryTemplate = retryTemplateProvider.getIfAvailable(() -> RetryTemplate.builder().build());

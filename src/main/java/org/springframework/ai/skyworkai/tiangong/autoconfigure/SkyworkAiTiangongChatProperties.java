@@ -24,7 +24,7 @@ public class SkyworkAiTiangongChatProperties extends SkyworkAiParentProperties {
      */
     @NestedConfigurationProperty
     private SkyworkAiTiangongChatOptions options = SkyworkAiTiangongChatOptions.builder()
-            .withModel(SkyworkAiTiangongApi.ChatModel.SENSECHAT.getValue())
+            .withModel(SkyworkAiTiangongApi.ChatModel.SKYCHAT_MEGAVERSE.getValue())
             .withMaxToken(ApiUtils.DEFAULT_MAX_TOKENS)
             .withDoSample(Boolean.TRUE)
             .withTemperature(ApiUtils.DEFAULT_TEMPERATURE)
